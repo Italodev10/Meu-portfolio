@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+        <title>Italo Pereira de Souza</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=K2D:wght@300;400;500;700&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/2dba346295.js" crossorigin="anonymous"></script>
+        <link rel="icon" type="image/x-icon" href="img/favicon.png">
+        <link href="css/reset.css" rel="stylesheet">
+        <link href="css/base.css" rel="stylesheet">
+        <link href="css/cabecalho.css" rel="stylesheet">
+        <link href="css/sobremim.css" rel="stylesheet">
+        <link href="css/formacao.css" rel="stylesheet">
+        <link href="css/portfolio.css" rel="stylesheet">
+        <link href="css/contato.css" rel="stylesheet">
+        
+    </head>
+    
+    
+    <body class="tema-claro">
+
+        <!-- Menu -->
+        <header class="cabecalho container">
+            <div class="cabecalho__icones">
+                <div class="switch">
+                    
+                    
+                </div>
+                <span class="navbar-toggle" id="js-navbar">
+                    <i class="fas fa-bars"></i>
+                </span>
+            </div>           
+            <nav class="cabecalho__navegacao">
+                <ul>
+                    <li class="cabecalho__link"><a href="#sobremim">Sobre Mim</a></li>
+                    <li class="cabecalho__link"><a href="#formacao">Formação</a></li>
+                    <li class="cabecalho__link"><a href="#portfolio">Portfólio</a></li>
+                    <li class="cabecalho__link"><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+ 
+
+            <!-- Seção Sobre Mim -->
+            <section class="sobremim container" id="sobremim">
+                <div class="sobremim__img">
+                    <img src="foto.jpeg" alt=" minha foto">
+                </div>
+                <div class="sobremim__texto"> 
+                    <h1 class="sobremim__titulo--animado"></h1>
+                    <div class="sobremim__texto"> 
+                    <h1 class="sobremim__titulo--animado">Do Hardware ao Software</h1>
+                </div>
+                    <p>"Olá! Meu nome é Ítalo Pereira de Souza e sou estudante de Análise e Desenvolvimento de Sistemas no Centro Universitário Internacional UNINTER.Minha jornada no mundo da tecnologia começou cedo; tive contato com dispositivos eletrônicos desde criança e foi nessa curiosidade inicial que nasceu minha paixão pela área. Atualmente, atuo como técnico de manutenção eletrônica, onde trabalho diariamente com o reparo e otimização de computadores, video games e celulares.Essa base sólida em hardware me proporcionou uma visão analítica e técnica diferenciada, que agora aplico no desenvolvimento de software. Busco constantemente evoluir minhas habilidades de programação e lógica para criar soluções inovadoras, unindo minha experiência prática em manutenção com o conhecimento acadêmico que venho adquirindo." 
+                    </p>
+                </div>         
+            </section>
+
+            <!-- Seção de Formação -->
+            <section class="formacao container" id="formacao"> 
+                <h1 class="formacao__titulo">Formação</h1>
+                <p>Graduação em Análise e desenvolmento de sistemas - UNINTER (Em andamento)
+                </p>  
+            </section>
+
+            <!-- Seção de Portfólio -->
+            <section class="portfolio container" id="portfolio"> 
+                <h1 class="portfolio__titulo">Portfólio</h1>
+                <div class="portfolio__grade">
+                    <figure class="portfolio__card">
+                        <img src="imagem.png" alt="print website">
+                        <figcaption>Projeto Integrador: HTML, CSS e JavaScript - UNINTER.</figcaption>
+                        <a class="portfolio__site" target="_blank" href="file:///C:/Users/ITALO/Desktop/Trabalhos%20feitos/Trabalho%20web%202/index.html">Website</a> | <a class="portfolio__repo" target="_blank" href="https://github.com/Italodev10/fds.uninter">Repositório</a>
+                    </figure>
+                    <figure class="portfolio__card">
+                        <img src="imagem2.jpeg" alt="print website">
+                        <figcaption>Projeto Integrador: HTML, CSS e JavaScript - UNINTER.</figcaption>
+                        <a class="portfolio__site" target="_blank" href="file:///C:/Users/ITALO/Desktop/Trabalhos%20feitos/Trabalho%20web%201/index.html">Website</a> | <a class="portfolio__repo" target="_blank" href="https://github.com/Italodev10/TrabalhoUninter">Repositório</a>
+                    </figure>
+                    
+                </div> 
+            </section>
+
+            <!-- Seção de contato -->
+            <section class="contato container" id="contato"> 
+                <h1 class="contato__titulo">Contato</h1>
+                <p>Possui alguma pergunta ?</p>
+
+                <form id="form" name="formulario">
+                    <textarea name="comentario" placeholder="Deixe seu comentário aqui." required></textarea>
+                    <span class="mensagem-erro">O comentário deve ter pelo menos 10 caracteres.</span>
+                    <label for="nome">Nome</label>
+                    <input type="text" name="nome" id="nome" placeholder="Digite seu nome." required/>
+                    <label for="email">E-mail</label>
+                    <input type="email" name="email" id="email" placeholder="Digite seu email." required/> 
+                    <input id="enviar" type="submit" value="Enviar" class="botao"/>
+                </form>
+
+                <p class="sucesso" id="sucesso"></p>
+                <div class="contato__redes">
+                    <a target="_blank" href="https://www.linkedin.com/in/alice-de-almeida/"><span class="contato__icone"><i class="fa-brands fa-linkedin"></i></span> 
+                    LinkedIn  </a>
+
+                    
+                </div>               
+            </section>
+
+            
+        </main>
+
+        <script src="index.js"></script>
+    </body>
+</html>
