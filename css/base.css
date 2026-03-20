@@ -1,0 +1,106 @@
+:root {
+    /* Tipografia estilo (Interface  fontes sans-serif limpas) */
+    --fonte-geral: 'Inter', 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    --fonte-destaque: 'Inter', 'Segoe UI', sans-serif;
+}
+
+html {
+    font-size: 45%;
+}
+
+body {
+    font-family: var(--fonte-geral);
+    height: 100vh;
+    color: var(--cor-fonte-geral);
+    font-size: 2.3rem;
+    margin: 0;
+}
+
+/* Modo Claro do Site Oficial */
+.tema-claro {
+    --primeiro-background: #ffffff;
+    --segundo-background: #f5f7f9;
+    --cor-fonte-geral: #1f1f1f;
+    --cor-fonte-destaque: #0070d1; 
+    --hover: #004a91;
+    --contorno: #dcdcdc;
+    --sombra: rgba(0, 112, 209, 0.2);
+}
+
+
+.container {
+    width: 100%;               
+    padding-right: 20px;       
+    padding-left: 20px;        
+    margin-right: auto;        
+    margin-left: auto;         
+    max-width: 1200px;         
+    box-sizing: border-box;    
+}
+
+h1 {
+    color: var(--cor-fonte-destaque);
+    font-size: 4rem;
+    padding: 2rem 0 1rem 0;
+    font-weight: 300;} /* Estilo mais fino
+    letter-spacing: -0.02em;
+    text-transform: uppercase; 
+
+
+h2 {
+    color: var(--cor-fonte-geral);
+    font-size: 3rem;
+    padding: 1rem 0 1rem 0;
+    font-weight: 400;
+}
+
+p {
+    padding: 1rem 0 1rem 0;
+    line-height: 1.6;
+    opacity: 0.9;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    color: var(--cor-fonte-destaque) !important;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border-radius: 50px;} /* Botões arredondados 
+
+
+a:hover {
+    color: var(--hover) !important;
+    text-decoration: underline;
+}
+
+main {
+    padding-top: 9rem;
+    background-color: var(--primeiro-background);
+}
+
+/* Ajustes Responsivos */
+@media(min-width: 1200px) {
+    html {
+        font-size: 62.5%;
+    }
+
+    h1 {
+        font-size: 5rem;
+        padding: 3rem 0 3rem 0;
+    }
+
+    .container {
+        padding-right: 18rem;
+        padding-left: 18rem;
+    }
+}
+
+@media(min-width: 768px) and (max-width: 1200px) {
+    .container {
+        padding-right: 13rem;
+        padding-left: 13rem;
+    }
+}
