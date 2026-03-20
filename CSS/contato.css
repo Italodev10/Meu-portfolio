@@ -1,0 +1,108 @@
+.contato {
+    display: grid;
+    justify-items: center;
+    text-align: center;
+    background-color: var(--segundo-background);
+    padding: 6rem 2rem; /* Espaçamento interno maior para respiro */
+}
+
+.contato__redes {
+    padding: 2rem 0 4rem 0;
+}
+
+.contato__icone {
+    font-size: 3rem;
+    transition: transform 0.3s ease;
+    color: var(--cor-fonte-geral);
+}
+
+.contato__icone:hover {
+    transform: scale(1.2);
+    color: var(--cor-fonte-destaque);
+}
+
+.contato form {
+    display: grid;
+    justify-items: center;
+    gap: 2rem; /* Gap maior seguindo o padrão*/
+    width: 100%;
+}
+
+textarea, input {
+    min-height: 5rem;
+    width: 100%;
+    max-width: 600px; /* Limite de largura para leitura confortável */
+    resize: vertical;
+    padding: 1.5rem;
+    box-sizing: border-box;
+    font-family: var(--fonte-geral);
+    font-size: 1.6rem;
+    background-color: var(--primeiro-background);
+    color: var(--cor-fonte-geral);
+    transition: all 0.3s ease;
+}
+
+input,
+select,
+textarea {
+    border-radius: 4px; /*arredondamento sutil em inputs */
+    border: 1px solid rgba(128, 128, 128, 0.3);
+}
+
+/* Efeito de Foco estilo (Brilho Azul) */
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border: 1px solid #0070d1;
+    box-shadow: 0 0 0 3px rgba(0, 112, 209, 0.2);
+}
+
+.erro {
+    border: 1px solid #ff4e4e !important;
+    background-color: rgba(255, 78, 78, 0.05);
+}
+
+.mensagem-erro {
+    color: #ff4e4e;
+    font-size: 1.3rem;
+    margin-top: 5px;
+    font-weight: 500;
+}
+
+#enviar {
+    width: 100%;
+    max-width: 250px; 
+    border-radius: 50px; 
+    margin-top: 2rem;
+    padding: 1.2rem 2.4rem;
+    font-size: 1.6rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: none;
+    cursor: pointer;
+    background-color: #0070d1; 
+    color: white;
+    box-shadow: 0 4px 15px rgba(0, 112, 209, 0.3);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+#enviar:hover {
+    background-color: #004a91;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 112, 209, 0.4);
+}
+
+#enviar:active {
+    transform: translateY(0);
+}
+
+.sucesso {
+    margin-top: 16px;
+    color: #2e7d32;
+    background-color: rgba(46, 125, 50, 0.1);
+    padding: 1rem 2rem;
+    border-radius: 4px;
+    font-weight: bold;
+}
